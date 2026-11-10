@@ -1,0 +1,17 @@
+[
+  {
+    "company": "BioNTech",
+    "country": "Germany",
+    "careers_url": "https://www.biontech.com/int/en/home/careers.html"
+  },
+  {
+    "company": "Novartis",
+    "country": "Switzerland",
+    "careers_url": "https://www.novartis.com/careers"
+  },
+  {
+    "company": "Sanofi",
+    "country": "France",
+    "careers_url": "https://jobs.sanofi.com/"
+  }
+]
