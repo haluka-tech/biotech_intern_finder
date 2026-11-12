@@ -1,0 +1,39 @@
+name: Daily Biotech Intern Scraper
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # Runs every day at 08:00 UTC
+  workflow_dispatch:      # Allows you to click a button to run it manually anytime
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # Gives permission to commit index.html back to the repo
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies using pip
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 python-dotenv
+
+      - name: Run Scraper Script
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python biotech_intern_finder.py
+
+      - name: Commit and push updated dashboard
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Auto-update biotech intern dashboard [skip ci]" || exit 0
+          git push

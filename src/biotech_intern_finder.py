@@ -27,7 +27,10 @@ GLOBAL_TARGET_KEYWORDS = [
     "research assistant",
     "oncology",
     "immunology",
-    "bioinformatics"
+    "bioinformatics",
+    "cancer research",
+    "graduate",
+    "summer internship"
 ]
 
 # ---------------------------------------------------------
@@ -74,7 +77,7 @@ def parse_with_openrouter(company_name, country, apply_url, raw_text, keywords):
     keywords_str = ", ".join(keywords)
     system_prompt = (
         "You are an expert biotechnology job crawler assistant. "
-        "Analyze career page text and extract relevant internship/student postings matching specified keywords. "
+        "Analyze career page text and extract relevant internship/graduaate student postings matching specified keywords. "
         "Always respond ONLY with valid JSON in the requested structure."
     )
 
