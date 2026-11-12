@@ -1,5 +1,7 @@
 import os
 import json
+from datetime import datetime, timezone
+
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
@@ -156,7 +158,11 @@ Page Text:
 # ---------------------------------------------------------
 def generate_html_report(all_jobs, output_path=OUTPUT_HTML_FILE):
     """Generates a responsive HTML dashboard displaying found job postings."""
-    
+
+    refreshed_at = datetime.now(timezone.utc)
+    refreshed_iso = refreshed_at.strftime("%Y-%m-%dT%H:%M:%SZ")
+    refreshed_label = refreshed_at.strftime("%d %b %Y, %H:%M UTC")
+
     table_rows = ""
     if not all_jobs:
         table_rows = """
@@ -217,6 +223,11 @@ def generate_html_report(all_jobs, output_path=OUTPUT_HTML_FILE):
             font-size: 1.75rem;
             margin: 0;
             color: #38bdf8;
+        }}
+        .refreshed {{
+            color: #94a3b8;
+            margin: 0.35rem 0 0 0;
+            font-size: 0.85rem;
         }}
         .badge {{
             background: #0369a1;
@@ -287,6 +298,7 @@ def generate_html_report(all_jobs, output_path=OUTPUT_HTML_FILE):
             <div>
                 <h1>🧫 Biotech Internship Finder</h1>
                 <p style="color: #94a3b8; margin: 0.25rem 0 0 0; font-size: 0.9rem;">Automated target company scan powered by OpenRouter</p>
+                <p class="refreshed">Last refreshed: <time datetime="{refreshed_iso}">{refreshed_label}</time></p>
             </div>
             <div class="badge">Active Roles Found: {len(all_jobs)}</div>
         </header>
