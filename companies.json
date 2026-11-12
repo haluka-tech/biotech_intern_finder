@@ -13,5 +13,145 @@
     "company": "Sanofi",
     "country": "France",
     "careers_url": "https://jobs.sanofi.com/"
+  },
+  {
+    "company": "Roche",
+    "country": "Switzerland",
+    "careers_url": "https://careers.roche.com/global/en"
+  },
+  {
+    "company": "AstraZeneca",
+    "country": "United Kingdom",
+    "careers_url": "https://careers.astrazeneca.com/"
+  },
+  {
+    "company": "GSK",
+    "country": "United Kingdom",
+    "careers_url": "https://jobs.gsk.com/"
+  },
+  {
+    "company": "Novo Nordisk",
+    "country": "Denmark",
+    "careers_url": "https://www.novonordisk.com/careers.html"
+  },
+  {
+    "company": "Boehringer Ingelheim",
+    "country": "Germany",
+    "careers_url": "https://www.boehringer-ingelheim.com/careers"
+  },
+  {
+    "company": "Evotec",
+    "country": "Germany",
+    "careers_url": "https://careers.evotec.com/en"
+  },
+  {
+    "company": "Genmab",
+    "country": "Denmark",
+    "careers_url": "https://careers.genmab.com/global/en"
+  },
+  {
+    "company": "argenx",
+    "country": "Netherlands",
+    "careers_url": "https://argenx.com/join-us"
+  },
+  {
+    "company": "UCB",
+    "country": "Belgium",
+    "careers_url": "https://careers.ucb.com/global/en"
+  },
+  {
+    "company": "Ipsen",
+    "country": "France",
+    "careers_url": "https://www.ipsen.com/careers/"
+  },
+  {
+    "company": "Servier",
+    "country": "France",
+    "careers_url": "https://servier.com/en/careers/"
+  },
+  {
+    "company": "Grifols",
+    "country": "Spain",
+    "careers_url": "https://www.grifols.com/en/careers"
+  },
+  {
+    "company": "CRISPR Therapeutics",
+    "country": "Switzerland",
+    "careers_url": "https://crisprtx.com/careers"
+  },
+  {
+    "company": "Qiagen",
+    "country": "Netherlands",
+    "careers_url": "https://www.qiagen.com/us/careers"
+  },
+  {
+    "company": "Sartorius",
+    "country": "Germany",
+    "careers_url": "https://www.sartorius.com/en/company/careers"
+  },
+  {
+    "company": "Pfizer",
+    "country": "United States",
+    "careers_url": "https://www.pfizer.com/about/careers"
+  },
+  {
+    "company": "Moderna",
+    "country": "United States",
+    "careers_url": "https://modernatx.wd1.myworkdayjobs.com/M_tx"
+  },
+  {
+    "company": "Amgen",
+    "country": "United States",
+    "careers_url": "https://careers.amgen.com/en"
+  },
+  {
+    "company": "Gilead Sciences",
+    "country": "United States",
+    "careers_url": "https://www.gilead.com/careers"
+  },
+  {
+    "company": "Biogen",
+    "country": "United States",
+    "careers_url": "https://www.biogen.com/careers.html"
+  },
+  {
+    "company": "AbbVie",
+    "country": "United States",
+    "careers_url": "https://careers.abbvie.com/"
+  },
+  {
+    "company": "Bristol Myers Squibb",
+    "country": "United States",
+    "careers_url": "https://careers.bms.com/"
+  },
+  {
+    "company": "Genentech",
+    "country": "United States",
+    "careers_url": "https://careers.gene.com/us/en"
+  },
+  {
+    "company": "BioMarin",
+    "country": "United States",
+    "careers_url": "https://www.biomarin.com/careers/"
+  },
+  {
+    "company": "Merck (MSD)",
+    "country": "United States",
+    "careers_url": "https://jobs.merck.com/"
+  },
+  {
+    "company": "Illumina",
+    "country": "United States",
+    "careers_url": "https://www.illumina.com/company/careers.html"
+  },
+  {
+    "company": "Takeda",
+    "country": "Japan",
+    "careers_url": "https://www.takeda.com/careers/"
+  },
+  {
+    "company": "Daiichi Sankyo",
+    "country": "Japan",
+    "careers_url": "https://www.daiichisankyo.com/careers/"
   }
 ]
