@@ -28,7 +28,7 @@ jobs:
       - name: Run Scraper Script
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: src/python biotech_intern_finder.py
+        run: python src/biotech_intern_finder.py
 
       - name: Commit and push updated dashboard
         run: |
